@@ -1,0 +1,11 @@
+*.[ao]
+*~
+*#
+*.swp
+*.out
+/comment
+/tags
+.tags
+.tags1
+*.udb
+*.files
