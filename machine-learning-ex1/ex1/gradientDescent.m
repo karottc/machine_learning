@@ -22,9 +22,9 @@ for iter = 1:num_iters
     h = theta(1) + theta(2) * a;
 
     theta0 = theta(1) - alpha * (1/m) * sum(h - y);
-    theta1 = theta(2) - alpha * (1/m) * sum(h - y) .* a;
+    theta1 = theta(2) - alpha * (1/m) * sum((h - y) .* a);
 
-    theta = [theta0, theta1];
+    theta = [theta0; theta1];
 
     % ============================================================
 
